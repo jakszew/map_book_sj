@@ -25,6 +25,7 @@ def update_user(users_data: list) -> None:
             user['location'] = input('podaj nową lokalizacje: ')
             user['posts'] = input('podaj liczbe postów: ')
 
+import folium
 
 def get_map(users_data: list) -> None:
     m = folium.Map(location=(52.23, 21.0), zoom_start=6)
